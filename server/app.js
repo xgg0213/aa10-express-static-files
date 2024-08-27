@@ -11,5 +11,8 @@ const app = express();
 // part 3:
 app.use('/', express.static('assets/scripts'));
 
+// bonus
+app.use('/stickers', express.static('assets/images'))
+
 const port = 8000;
 app.listen(port, () => console.log('Server is listening on port', port));
